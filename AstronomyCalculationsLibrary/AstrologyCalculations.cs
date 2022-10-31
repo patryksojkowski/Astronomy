@@ -37,7 +37,7 @@ namespace AstronomyCalculationsLibrary
     {
       if (CoordinatesInvalid()) throw new ArgumentOutOfRangeException("Invalid longitude");
 
-      var asc = AscendantCalculations.GetAscendant(longitude, latitude, birthDateTime, isVedic);
+      var asc = new AscendantCalculations().GetAscendant(longitude, latitude, birthDateTime);
       if (isVedic)
       {
         var shift = CommonCalculations.GetVedicShift(birthDateTime);
