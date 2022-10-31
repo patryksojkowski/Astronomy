@@ -25,7 +25,7 @@ namespace AstronomyCalculationsLibrary
         /// <returns></returns>
         public static PlanetManager GetInstance()
         {
-            if(Instance is null)
+            if (Instance is null)
             {
                 Instance = new PlanetManager();
             }
